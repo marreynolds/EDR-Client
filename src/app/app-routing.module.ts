@@ -21,7 +21,7 @@ const routes: Routes = [
         ]
     },
     {
-        path: 'dashboard', canActivate: [DashGuard],
+path: 'dashboard', canActivate: [DashGuard],
         children: [ { path: "", component: DashboardComponent } ]
     },
     { path: '**', component: PageNotFoundComponent }
